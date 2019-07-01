@@ -43,7 +43,7 @@ class List extends Component{
                         {object.email}
                     </td>
                     <td>
-                        <Link to={"/user/"+object.id_user} className="btn btn-warning">Edit</Link>
+                        <Link id="btn-edit" to={"/user/"+object.id_user} className="btn btn-warning">Editar</Link>
                     </td>
                     <td>
                         <button onClick={() => self.deleteUser(object.id_user)} className="btn btn-danger">Eliminar</button>
