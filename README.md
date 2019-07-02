@@ -9,6 +9,11 @@ Este proyecto ReactJS CRUD Usuarios + Login te permite hacer lo siguiente:
 
 Este proyecto es para aprendizaje.
 
+##  Requisitos
+
+  - Node.js
+  - React
+
 ##  Como instalar
 
 ```bash
@@ -32,7 +37,7 @@ cd front-react-client
 npm test
 ```
 
-## License
+## Licencia
 
 The MIT License (MIT)
 
