@@ -6,6 +6,7 @@ class Navbar extends Component{
     logOut(e){
         e.preventDefault();
         localStorage.removeItem('usertoken');
+        localStorage.removeItem('userId');
         this.props.history.push('/');
     }
 
@@ -37,6 +38,11 @@ class Navbar extends Component{
                 <li className="nav-item">
                     <Link to="/list" className="nav-link">
                         Lista Usuarios
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link  to="/listTask" className="nav-link">
+                        Lista Tareas
                     </Link>
                 </li>
                 <li className="nav-item">

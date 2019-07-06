@@ -1,11 +1,15 @@
-# ReactJS CRUD Usuarios + Login
+# ReactJS CRUD Usuarios + To Do List + Login
 
-Este proyecto ReactJS CRUD Usuarios + Login te permite hacer lo siguiente:
+Este proyecto ReactJS CRUD Usuarios + To Do List + Login te permite hacer lo siguiente:
   - Puedes registrar usuarios.
   - Puedes editar usuarios.
   - Puedes eliminar usuarios.
   - Puedes listar usuarios.
   - Puedes hacer login con un usuario registrado.
+  - Puedes registrar tareas nuevas.
+  - Puedes editar tareas.
+  - Puedes eliminar tareas.
+  - Se listan las tareas del usuario.
 
 Este proyecto es para aprendizaje.
 

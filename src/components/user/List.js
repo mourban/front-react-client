@@ -42,11 +42,9 @@ class List extends Component{
                     <td>
                         {object.email}
                     </td>
-                    <td>
+                    <td class="text-center">
                         <Link id="btn-edit" to={"/user/"+object.id_user} className="btn btn-warning">Editar</Link>
-                    </td>
-                    <td>
-                        <button onClick={() => self.deleteUser(object.id_user)} className="btn btn-danger">Eliminar</button>
+                        <button style={{ marginLeft: 8 }} onClick={() => self.deleteUser(object.id_user)} className="btn btn-danger">Eliminar</button>
                     </td>
                 </tr>
             );
@@ -60,10 +58,10 @@ class List extends Component{
                 <table className="table table-striped" style={{ marginTop: 20 }}>
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Email</th>
-                        <th colSpan="2">Acciones</th>
+                        <th class="text-center">Nombre</th>
+                        <th class="text-center">Apellido</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -28,9 +28,10 @@ class Login extends Component{
 
         login(user)
         .then(response => {
-            if (response.token){
-                localStorage.setItem('usertoken', response.token);
-                this.props.history.push('list');
+            if (response.values){
+                localStorage.setItem('usertoken', response.values.token);
+                localStorage.setItem('userId', response.values.userId);
+                this.props.history.push('/listTask');
             }else{
                 this.setState({ message: response.error });
             }

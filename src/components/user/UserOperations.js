@@ -22,7 +22,7 @@ export const login = user => {
     })
     .then(response => {
         console.log(response);
-        return {token: response.data};
+        return {values: response.data};
     })
     .catch(error => {
         console.log(error);

@@ -7,6 +7,9 @@ import Login from './components/user/Login';
 import Add from './components/user/Add';
 import Update from './components/user/Update';
 import List from './components/user/List';
+import AddTask from './components/task/AddTask';
+import UpdateTask from './components/task/UpdateTask';
+import ListTask from './components/task/ListTask';
 
 class App extends Component {
   render(){
@@ -20,6 +23,9 @@ class App extends Component {
             <Route exact path="/add" component={Add} />
             <PrivateRoute exact path="/user/:id" component={Update} />
             <PrivateRoute exact path="/list" component={List} />
+            <PrivateRoute exact path="/addTask" component={AddTask} />
+            <PrivateRoute exact path="/task/:id" component={UpdateTask} />
+            <PrivateRoute exact path="/listTask" component={ListTask} />
           </div>
         </div>
       </Router>
